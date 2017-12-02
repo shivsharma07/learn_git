@@ -1,4 +1,4 @@
-git init  //initialise a repo (Used to create fresh repository)
+git init  //initialise a repo (Used to create fresh repository) // new change 1
 
 git clone <clone_path>  // clone a git repo
 
