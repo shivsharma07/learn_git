@@ -1,0 +1,30 @@
+Features
+- Collaboration 
+- Free/Open source
+- Contribution to open source projects
+- Seamless code review
+- Branches
+
+General questions.
+1. How to create a fresh git repository?
+2. What is GIT clone?
+3. What is git checkout?
+4. How can we compare changes (file and branches) in git?
+5. What is staging area in git?
+6. How GIT commit is different then SVN commit?
+7. What is GIT push/pull?
+8. What is branch and how it is useful?
+9. What is git stash ?
+10. How to merge branhces?
+11. What is pull request?
+12. What is GIT history and how to rewrite it?
+13. Git reset.
+14. What is fork?
+
+General GIT Best practices:
+1. Commit Related Changes
+2. Commit Often
+3. Don’t Commit Half-Done Work
+4. Test Before You Commit
+5. Write Good Commit Messages
+6. Use Branches
