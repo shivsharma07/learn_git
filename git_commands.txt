@@ -1,6 +1,6 @@
 git init  //initialise a repo (Used to create fresh repository) // new change 1
 
-git clone <clone_path>  // clone a git repo
+git clone <clone_path>  // clone a git repo  //test branch change2
 
 git remote -v  //List remote repository paths
 
