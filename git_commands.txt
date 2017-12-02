@@ -1,0 +1,69 @@
+git init  //initialise a repo (Used to create fresh repository)
+
+git clone <clone_path>  // clone a git repo
+
+git remote -v  //List remote repository paths
+
+git remote add origin<or_other_name> <remote_repo_path>  //Add remote repo URL to a repo
+
+git branch <branch_name>  //Create a branch
+
+git branch // Lists all branches
+
+git branch -D <branch_name> //delete local branch
+
+git checkout <branch_name>  // checkout to the branch
+
+git checkout -b <branch_name>  // create new branch using base as current branch and checkout to that branch
+
+git add <filepath>   // Add file to git staging area
+
+git commit -m "commit message"  // Commit changes to local branch
+
+git push origin <branch_name>  // Push branch to remote
+
+git checkout origin/master --  application/log/application.log  //Checkout a file from master
+				   /<branch_name>
+
+git fetch origin  // Fetch all branches from origin
+git pull origin <branch_name>  // Pull changes from a particular remote branch to current base branch  current base branch= git checkout <branch_name>
+	eg: git pull origin master  // pull updates of master branch to current base branch branch
+
+// Stash uncommitted changes (Used to switch between branches)
+git stash   // stash changes from current branch
+git stash pop  // Pop latest stashed changes to any branch
+git stash pop stash@{n} // Pop particular index item from stash list
+git stash apply // Apply item from stash list
+git stash apply stash@{n} // apply any particular index item from stash list
+git stash drop  // to drop a stash
+git stash list  // Shows stash list
+git stash clear  // Clear entire stash list
+
+// Comparison commands
+git diff --name-only <src_branch_name>...<dest_branch_name>  //Compare any two branches
+git diff --color <src_branch_name>...<dest_branch_name>  //Show all change differences
+git diff --color <filepath>  //Compare uncommitted changes with current branch
+git diff --color commit1# commit2#   //Compare 2 commits on smae branch
+
+git diff --color origin/master -- <file_path> //Compare current branch file with origin master
+
+// Change history of a branch eg: squash/drop commits
+git rebase -i origin/master  // change branch history or update any branch with respect master
+git push origin -f <branch_name>  // forcefully push the rebased branch to remote
+
+// Merge branch
+git checkout <branch_1>  //Checkout to <branch_1>
+git merge <branch_2>   // Merge <branch_2> to <branch_1>
+git push origin <branch_1>  // Push merged changes to remote <branch_1>
+
+git clean -f  // Remove all untrackes files
+git rm <filepath>  //Remove file from git
+
+// git reset commands
+git reset --hard 82d1b78e42142662fd97421279819c22018a162c
+git reset --soft HEAD@{1}
+git commit -m "Reverting to the state of the project at 82d1b78e42142662fd97421279819c22018a162c"
+
+git config --global core.autocrlf true
+
+
